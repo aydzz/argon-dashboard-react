@@ -29,6 +29,8 @@ import {
   Col,
 } from "reactstrap";
 
+import mainLogo from "../../assets/img/logo.svg"
+
 const AdminNavbar = () => {
   return (
     <>
@@ -37,12 +39,12 @@ const AdminNavbar = () => {
           <NavbarBrand to="/" tag={Link}>
             <img
               alt="..."
-              src={require("../../assets/img/brand/argon-react-white.png")}
+              src={mainLogo}
             />
           </NavbarBrand>
-          <button className="navbar-toggler" id="navbar-collapse-main">
+          {/* <button className="navbar-toggler" id="navbar-collapse-main">
             <span className="navbar-toggler-icon" />
-          </button>
+          </button> */}
           <UncontrolledCollapse navbar toggler="#navbar-collapse-main">
             <div className="navbar-collapse-header d-md-none">
               <Row>
@@ -50,7 +52,7 @@ const AdminNavbar = () => {
                   <Link to="/">
                     <img
                       alt="..."
-                      src={require("../../assets/img/brand/argon-react.png")}
+                      src={mainLogo}
                     />
                   </Link>
                 </Col>
@@ -63,13 +65,13 @@ const AdminNavbar = () => {
               </Row>
             </div>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink className="nav-link-icon" to="/" tag={Link}>
+              {/* <NavItem>
+                <NavLink className="nav-link-icon" to="/dashboard" tag={Link}>
                   <i className="ni ni-planet" />
                   <span className="nav-link-inner--text">Dashboard</span>
                 </NavLink>
-              </NavItem>
-              <NavItem>
+              </NavItem> */}
+              {/* <NavItem>
                 <NavLink
                   className="nav-link-icon"
                   to="/auth/register"
@@ -78,23 +80,23 @@ const AdminNavbar = () => {
                   <i className="ni ni-circle-08" />
                   <span className="nav-link-inner--text">Register</span>
                 </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="nav-link-icon" to="/auth/login" tag={Link}>
+              </NavItem> */}
+              {/* <NavItem>
+                <NavLink className="nav-link-icon" to="/login" tag={Link}>
                   <i className="ni ni-key-25" />
                   <span className="nav-link-inner--text">Login</span>
                 </NavLink>
-              </NavItem>
-              <NavItem>
+              </NavItem> */}
+              {/* <NavItem>
                 <NavLink
                   className="nav-link-icon"
-                  to="/admin/user-profile"
+                  to="/app/profile"
                   tag={Link}
                 >
                   <i className="ni ni-single-02" />
                   <span className="nav-link-inner--text">Profile</span>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </UncontrolledCollapse>
         </Container>
